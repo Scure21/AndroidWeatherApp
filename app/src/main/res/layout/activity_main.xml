@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stephaniecure.stephapp.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#1E90FF"
+        android:hint="@string/enter_zip_code"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/getWeather"
+        android:id="@+id/enterZipCode" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/get_weather"
+        android:id="@+id/getWeather"
+        android:layout_below="@+id/image"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignBottom="@+id/enterZipCode" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="200dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/image"
+            android:layout_below="@+id/getForecast"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/city"
+            android:text="Charlottesville"
+            android:textSize="30sp"
+            android:layout_alignTop="@+id/image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:text="28°"
+        android:textSize="35sp"
+        android:id="@+id/temperature"
+        android:textAlignment="center"
+        android:layout_below="@+id/city"
+        android:layout_alignStart="@+id/city"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:id="@+id/clouds"
+        android:layout_below="@+id/temperature"
+        android:layout_alignStart="@+id/temperature"
+        android:layout_marginTop="11dp"
+        android:text="Clouds 32/"
+        android:textSize="25sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/view_forecast"
+            android:layout_marginTop="67dp"
+            android:id="@+id/getForecast"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

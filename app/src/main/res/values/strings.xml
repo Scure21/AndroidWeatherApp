@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="enter_zip_code">Enter zipcode</string>
+    <string name="get_weather">Get weather</string>
+    <string name="view_forecast">View forecast</string>
+    <string name="forecast">Forecast</string>
+</resources>

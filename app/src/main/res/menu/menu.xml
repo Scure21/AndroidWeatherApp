@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorites"
+        android:enabled="true"
+        android:icon="@mipmap/ic_moon"
+        android:title="@string/forecast"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_music"
+        android:enabled="true"
+        android:icon="@mipmap/ic_cloud"
+        android:title="hello"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_schedules"
+        android:enabled="true"
+        android:icon="@mipmap/ic_sun"
+        android:title="@string/get_weather" />
+</menu>
